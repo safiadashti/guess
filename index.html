@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ultimate Guess Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>🎯 Guess The Number</h1>
+
+  <p id="message">Start guessing...</p>
+
+  <select id="level" onchange="startGame()">
+    <option value="10">Easy (1-50)</option>
+    <option value="7">Medium (1-100)</option>
+    <option value="5">Hard (1-200)</option>
+  </select>
+
+  <br>
+
+  <input type="number" id="guess" placeholder="Enter number">
+
+  <br>
+
+  <button onclick="checkGuess()">Check</button>
+  <button onclick="resetGame()">Again</button>
+  <button onclick="toggleMode()">🌙 Dark Mode</button>
+
+  <p>⏳ Time: <span id="timer">30</span></p>
+  <p>🎯 Score: <span id="score">10</span></p>
+  <p>🏆 High Score: <span id="highscore">0</span></p>
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
